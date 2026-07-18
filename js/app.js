@@ -65,3 +65,22 @@ function filtrarFrutas(frutas, letra) {
   return frutas.filter(fruta => fruta.startsWith(letra));
 }
 console.log("Frutas que empiezan con 'p':", filtrarFrutas(lista, "p"));
+
+//6. Objetos
+let persona = {
+  nombre: "Gabriela",
+  edad: 22,
+  saludar: function() {
+    return "Hola, soy " + this.nombre;
+  }
+};
+console.log(persona.saludar());
+
+// Arreglo de objetos
+let usuarios = [
+  { nombre: "Ana", edad: 20 },
+  { nombre: "Luis", edad: 25 },
+  { nombre: "Sofía", edad: 30 }
+];
+
+usuarios.forEach(u => console.log("Usuario:", u.nombre, "Edad:", u.edad));
