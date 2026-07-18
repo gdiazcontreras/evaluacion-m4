@@ -45,3 +45,23 @@ switch (operacion) {
   default:
     console.log("Operación no válida");
 }
+
+// 5. Arreglos y ciclos
+let lista = ["manzana", "pera", "plátano", "uva"];
+console.log("Lista completa:", lista);
+
+for (let i = 0; i < lista.length; i++) {
+  console.log("Elemento con for:", lista[i]);
+}
+
+let j = 0;
+while (j < lista.length) {
+  console.log("Elemento con while:", lista[j]);
+  j++;
+}
+
+// Función para filtrar
+function filtrarFrutas(frutas, letra) {
+  return frutas.filter(fruta => fruta.startsWith(letra));
+}
+console.log("Frutas que empiezan con 'p':", filtrarFrutas(lista, "p"));
