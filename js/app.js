@@ -2,8 +2,8 @@
 // Aplicación de consola en JavaScript
 
 // 1. Mensajes básicos
-console.log("Bienvenida a la aplicación de consola 🚀");
-alert("Hola! Vamos a practicar JavaScript");
+console.log("Bienvenido/a a la aplicación de consola 🚀");
+alert("¡Hola! Vamos a practicar JavaScript");
 
 // 2. Pedir datos al usuario
 let num1 = parseFloat(prompt("Ingresa el primer número:"));
