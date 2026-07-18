@@ -1,4 +1,4 @@
-// --- Proyecto Módulo 3 ---
+// --- Proyecto Módulo 4 ---
 // Aplicación de consola en JavaScript
 
 // 1. Mensajes básicos
@@ -8,6 +8,11 @@ alert("¡Hola! Vamos a practicar JavaScript");
 // 2. Pedir datos al usuario
 let num1 = parseFloat(prompt("Ingresa el primer número:"));
 let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+
+// Validación de inputs
+if (isNaN(num1) || isNaN(num2)) {
+  console.log("Debes ingresar números válidos");
+}
 
 // 3. Funciones matemáticas
 function sumar(a, b) {
@@ -66,7 +71,7 @@ function filtrarFrutas(frutas, letra) {
 }
 console.log("Frutas que empiezan con 'p':", filtrarFrutas(lista, "p"));
 
-//6. Objetos
+// 6. Objetos
 let persona = {
   nombre: "Gabriela",
   edad: 22,
