@@ -25,3 +25,23 @@ function dividir(a, b) {
   }
   return a / b;
 }
+
+// 4. Condicionales
+let operacion = prompt("¿Qué operación quieres realizar? (suma, resta, multiplicar, dividir)");
+
+switch (operacion) {
+  case "suma":
+    console.log("Resultado:", sumar(num1, num2));
+    break;
+  case "resta":
+    console.log("Resultado:", restar(num1, num2));
+    break;
+  case "multiplicar":
+    console.log("Resultado:", multiplicar(num1, num2));
+    break;
+  case "dividir":
+    console.log("Resultado:", dividir(num1, num2));
+    break;
+  default:
+    console.log("Operación no válida");
+}
